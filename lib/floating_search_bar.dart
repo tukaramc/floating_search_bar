@@ -32,6 +32,7 @@ class FloatingSearchBar extends StatelessWidget {
     this.onChanged,
     this.title,
     this.onTap,
+    this.backColor,
     this.decoration,
     this.padding = EdgeInsets.zero,
     this.pinned = false,
@@ -60,12 +61,14 @@ class FloatingSearchBar extends StatelessWidget {
   final bool pinned;
 
   final EdgeInsetsGeometry padding;
+  final Color backColor;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: drawer,
       endDrawer: endDrawer,
+      backgroundColor: backColor,
       body: NestedScrollView(
         headerSliverBuilder: (context, enabled) {
           return [
