@@ -34,6 +34,7 @@ class FloatingSearchBar extends StatelessWidget {
     this.title,
     this.onTap,
     this.decoration,
+     this.backColor,
     this.padding = EdgeInsets.zero,
     this.pinned = false,
     @required IndexedWidgetBuilder itemBuilder,
