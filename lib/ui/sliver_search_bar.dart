@@ -239,7 +239,7 @@ class _FloatingAppBarState extends State<_FloatingAppBar> {
   }
 
   RenderSliverFloatingPersistentHeader _headerRenderer() {
-    return context.ancestorRenderObjectOfType<RenderSliverFloatingPersistentHeader>();
+    return context.findRootAncestorStateOfType<RenderSliverFloatingPersistentHeader>();
   }
 
   void _isScrollingListener() {
